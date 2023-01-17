@@ -1,0 +1,55 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2638
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fmodern\fcharset0 Courier;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red255\green255\blue255;}
+{\*\expandedcolortbl;;\cssrgb\c0\c1\c1;\cssrgb\c100000\c100000\c100000;}
+\margl1440\margr1440\vieww19420\viewh11840\viewkind0
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs26 \cf2 \cb3 Image Processor\
+You will expect this view when opening the program:\
+\
+\cf2 "Hello! Here are the available commands to execute this program: "\
+\
+"load-image image-path image-name"\
+"save-image image-path image-name"\
+"The Greyscale Functions:"\
+"red-component image-name destination-image-name"\
+"green-component image-name destination-image-name"\
+"blue-component image-name destination-image-name"\
+"value-component image-name destination-image-name"\
+"intensity-component image-name destination-image-name"\
+"luma-component image-name destination-image-name"\
+\cf2 \'93End of Greyscale Functions" \
+\cf2 "brighten-image increment image-name destination-image-name"\
+"Flip Cases: "\
+"vertical-flip image-name destination-image-name"\
+"horizontal-flip image-name destination-image-name"\
+"vertical-horizontal-flip image-name destination-image-name"\
+"horizontal-vertical-flip image-name destination-image-name"\
+\cf2 \'93quit\'94\
+\
+Above are all the possible commands for this program. \
+Interfaces:\
+imagecontroller - this interface is the controller and contains a method that takes the information and state of the model and transmit that information to the view and the computer (e.g. loading/saving images). \
+imagemodel - this interface is the model and contains all of the methods that are called in the text-based commands.\
+imageview - this interface prints out the commands and when images are correctly saved and loaded. \
+\
+Classes:\
+ImageControllerImpl - this class implements the imagecontroller interface and uses a Scanner and Readable to take in user input. The controller also handles a HashMap of Images, so that there can be multiple images at a time. \
+PPMImageModel - this class implements the imagemodel interface and takes in nothing, its load method takes in a filename that image is what will be used within the rest of the methods of that the certain model object. \
+ImageTextView - this class implements the imageview class and this class takes in an Appendable and renders messages that are given to it. \
+ImageMain - this class is the main program of the Image Processor\
+Enum FlipType - this enumeration represents the different ways to flip an image\
+Enum VisualizationType - this enumeration represents the different ways to visualize a greyscale image\
+\
+To run this program:\
+load-image Woman.ppm Woman\
+save Woman\
+red-component Woman redWoman\
+brighten-image Woman brightWoman\
+vertical-flip brightWoman verticalBrightWoman\
+save redWoman\
+save brightWoman\
+save verticalBrightWoman\
+quit\
+}
