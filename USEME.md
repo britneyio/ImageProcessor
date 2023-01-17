@@ -1,4 +1,4 @@
-GUI User Controls 
+# GUI User Controls 
 
 Click on a button: 
 - Load an image button: opens a menu to choose an image from your local computer
