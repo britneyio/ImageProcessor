@@ -75,6 +75,7 @@ save verticalBrightWoman.png verticalBrightWoman
 quit
 
 ## This is an academic project from Northeastern University's Object Oriented Design class. 
+### Do not copy or use in academic projects. It can be used for personal use only. 
 
 ImageProcessor has been updated with a graphical user interface and has new additional features. The graphical user interface has button for the color transformation methods and flipping methods. Then there is a brightness slider ranging from -100 to 100. There are buttons for loading and saving, so that you can load any image that is a JPG, PPM, or PNG, the application doesn’t allow for any other file types. Saving can be done by typing the name of the file, if no file extension is given then the default extensions is png.  There is then an input box that only allows numbers above 0 to be inputted for downscaling. For errors there are visual popups for example when there isn’t a file there and there is attempt to use buttons. The program is fully functional. There were design changes throughout the model as there were some bugs. For example, when an image was sepiad then flipped the flip image would be the image before it had been sepiad. So I added that functionality to be able to continuously add. 
 
