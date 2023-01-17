@@ -1,3 +1,5 @@
+GUI User Controls 
+
 Click on a button: 
 - Load an image button: opens a menu to choose an image from your local computer
 - Save current image button: saves the image that is being worked, input an image name
